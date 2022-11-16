@@ -1,0 +1,87 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+body {
+    background-color: teal;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #0B172A;
+    z-index: 10;
+    font-family: "Oswald";
+    font-size: 24px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid teal;
+}
+
+header a {
+    display: inline-block;
+    width: 80px;
+    float: left;
+    text-align: center;
+    color: magenta;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-left: 1px solid white;
+}
+
+header a:hover {
+    background: white;
+    color: #333;
+}
+
+header .right {
+    float: right;
+    border-right: none;
+    border-left: 1px solid white;
+    padding-right: 25px;
+}
+
+header .right:hover {
+    margin-right: 30px;
+}
+
+.container {
+    position: relative;
+    top: 120px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: repeat(2, 600px);
+    border: 1px solid white;
+    grid-template-areas:    "one two"
+                            "three four";
+    justify-content: space-around;
+
+    grid-row-gap: 20px;
+}
+
+.optionA {
+    grid-area: one;
+    background-color: red;
+}
+
+.optionB {
+    grid-area: two;
+    background-color: green;
+}
+
+.optionC {
+    grid-area: three;
+    background-color: blue;
+}
+
+.optionD {
+    grid-area: four;
+    background-color: cyan;
+}

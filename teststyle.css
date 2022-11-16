@@ -1,0 +1,29 @@
+<!-- #BC4123 orange, #0B172A blue, #463940 gray
+
+* {
+  text-decoration: none;
+  color: inherit;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+html {
+  background-color: #0B172A
+}
+
+header {
+  position: fixed;
+  top: 0;
+  text-align: left;
+  width:100%;
+
+}
+
+.headpic {
+  display: inline-block;
+  width: 80%;
+  opacity: 60%;
+  padding-left: 100px;
+
+}
+
